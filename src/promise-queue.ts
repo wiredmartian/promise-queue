@@ -1,4 +1,4 @@
-type PromiseBatchResult<D, E> = {
+export type PromiseBatchResult<D, E> = {
     status: "rejected" | "fulfilled"
 } & { status: "fulfilled", data: D }
     | { status: "rejected", error: E }
